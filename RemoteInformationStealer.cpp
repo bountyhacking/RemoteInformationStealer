@@ -1,6 +1,5 @@
 // REMOTE INFORMATION STEALER BY BOUNTYHACKER
 
-
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #pragma comment(lib, "Ws2_32.lib")
 #include <iostream>
